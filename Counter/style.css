@@ -1,0 +1,31 @@
+body{
+    background-color: #b3e6b0;
+}
+
+.counter-container {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .counter-box {
+    text-align: center;
+    border: 5px solid #0004ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+  }
+  
+  .counter-box h2 {
+    font-size: 2rem;
+    color: #0004ff;
+  }
+  
+  .counter-box p {
+    font-size: 1rem;
+    color: #000000;
+  }
