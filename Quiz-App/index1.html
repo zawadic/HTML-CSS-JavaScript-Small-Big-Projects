@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Quiz Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h1>Quiz Game</h1>
+    <div id="question-container">
+      <h2 id="question">Do you want to Start this Quiz game?</h2>
+      <ul id="answer-buttons">
+        <!-- Answer options will be dynamically added here -->
+      </ul>
+    </div>
+    <div id="controls">
+      <button id="start-btn" class="btn">Start Quiz</button>
+      <button id="next-btn" class="btn hide">Next</button>
+    </div>
+    <div id="timer" class="hide">Time left: <span id="time">10</span> seconds</div>
+    <div id="result" class="hide"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

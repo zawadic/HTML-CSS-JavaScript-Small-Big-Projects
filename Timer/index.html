@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productive Pomodoro Timer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Productive Pomodoro Timer</h1>
+    <label>Set End Time (HH:MM AM/PM):</label><br>
+    <input type="text" id="endTime" placeholder="e.g., 3:30 PM">
+    <button onclick="startTimer()">Start Timer</button>
+    <div id="timer">00:00</div>
+    <audio id="alarm" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

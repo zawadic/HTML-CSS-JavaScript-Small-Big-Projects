@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #bdc3c7);
+    color: #fff;
+  }
+
+  .clock {
+    background: #34495e;
+    padding: 30px 50px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .time {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+
+  .date {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .ampm {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-style: italic;
+  }

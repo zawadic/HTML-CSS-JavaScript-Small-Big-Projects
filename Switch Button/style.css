@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.switch-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.switch-checkbox {
+  display: none;
+}
+
+.switch-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  height: 60px;
+  background: #d9d9d9;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  transition: background 0.3s ease;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+}
+
+.sun {
+  background-size: contain;
+}
+
+.moon {
+  background-size: contain;
+}
+
+.toggle {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease, background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle .fa-sun{
+  font-size: 24px;
+  color: #ffd700; 
+  transition: color 0.3s ease;
+}
+
+/* Checked (Dark Mode) */
+.switch-checkbox:checked + .switch-label {
+  background: #333;
+}
+
+.switch-checkbox:checked + .switch-label .toggle {
+  left: 65px;
+  background: #555;
+}
+
+.switch-checkbox:checked + .switch-label .toggle i {
+  font-size: 24px;
+  color: #fff; 
+}
+
+/* Light and dark mode styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark-mode {
+  background-color: #181818;
+  color: #ffffff;
+}
