@@ -1,0 +1,125 @@
+/* General styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d1d1d, #4b4b4b);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #game-container {
+    text-align: center;
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  #turn-indicator {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  #current-player {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #111;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+  }
+  
+  #current-player.x {
+    color: #f00;
+    box-shadow: 0 0 10px #f00;
+  }
+  
+  #current-player.o {
+    color: #0af;
+    box-shadow: 0 0 10px #0af;
+  }
+  
+  /* Game grid */
+  #game {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    gap: 10px;
+    margin: 20px auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cell {
+    width: 120px;
+    height: 120px;
+    background: #444;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cell:hover {
+    transform: scale(1.1);
+    background: #555;
+  }
+  
+  .cell.x {
+    color: #f00;
+    text-shadow: 0 0 15px #f00;
+  }
+  
+  .cell.o {
+    color: #0af;
+    text-shadow: 0 0 15px #0af;
+  }
+  
+  .cell.winning {
+    background: linear-gradient(45deg, #0ff, #00f);
+    animation: glow 1s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 15px #0ff;
+    }
+    to {
+      box-shadow: 0 0 25px #00f;
+    }
+  }
+  
+  /* Result and button */
+  #result-message {
+    font-size: 1.8rem;
+    color: #fff;
+    margin: 20px 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  #play-again {
+    background: #f00;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #f00;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #play-again:hover {
+    background: #d00;
+    box-shadow: 0 0 15px #d00;
+  }
+  
