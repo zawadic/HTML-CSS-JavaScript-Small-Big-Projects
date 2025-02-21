@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mobile-watch-container{
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+.mobile-watch-container:hover{
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px ;
+}
+.fa-battery-full {
+  color: #4caf50; 
+}
+
+.fa-battery-empty {
+  color: #ff0000; /* Empty battery color */
+}
+
+.fa-battery-quarter {
+  color: #ff9800; /* Quarter battery color */
+}
+
+.fa-battery-half {
+  color: #ffc107; /* Half battery color */
+}
+
+.fa-battery-three-quarters {
+  color: #9f8b0b; /* Three-quarters battery color */
+}
+.apps {
+  position: fixed;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.app {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.app:hover {
+  filter: brightness();
+}
+
+.call-interface {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.call-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.call-content {
+  font-size: 18px;
+}
+
+
+.wifi i, .battery i {
+  font-size: 16px;
+  margin-left: 10px;
+}

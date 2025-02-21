@@ -3,18 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Number Guessing Game</title>
+  <title>Number Guessing Game - Two Players</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="game-container">
-    <h1>Guess the Number!</h1>
-    <p>Enter a number between 1 and 3:</p>
-    <input type="number" id="guessInput" min="1" max="3" placeholder="Your guess">
+    <h1>Two-Player Guess the Number!</h1>
+    <p>Player <span id="currentPlayer">1</span>, enter a number between 1 and 5:</p>
+    <input type="number" id="guessInput" min="1" max="5" placeholder="Your guess">
     <button onclick="checkGuess()">Guess</button>
     <p id="message"></p>
-    <button onclick="resetGame()">Play Again</button>
+
+    <div class="scores">
+      <p>Player 1 Score: <span id="player1Score">0</span></p>
+      <p>Player 2 Score: <span id="player2Score">0</span></p>
+    </div>
+
+    <button onclick="resetGame()" class="reset-button">Restart Game</button>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>

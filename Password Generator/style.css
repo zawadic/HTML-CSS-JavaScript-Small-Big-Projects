@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 350px;
+    background-color: antiquewhite; /* Slightly darker than background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 10px 0 0 #a7a7a7;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-right: auto;
+}
+
+.mode-toggle {
+    background: white;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.mode-toggle:focus {
+    background-color: #3a4a3e;
+    color: white;
+}
+
+.fa-sun{
+    color: yellow;
+}
+
+.password-generator {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    overflow: hidden;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    border: none;
+    outline: none;
+}
+
+.copy-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button#generate-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-mode .container {
+    background-color: #555555;
+}
+
+body.dark-mode .copy-btn {
+    background-color: #1f7a3d;
+}
+
+body.dark-mode button#generate-btn {
+    background-color: #0056b3;
+}

@@ -5,16 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock Paper Scissors</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="game-container">
     <h1>Rock, Paper, Scissors</h1>
-    <p>Choose your move:</p>
-    <button onclick="playGame('rock')">Rock</button>
-    <button onclick="playGame('paper')">Paper</button>
-    <button onclick="playGame('scissors')">Scissors</button>
+    <h4>Choose your move:</h4>
+    <button onclick="playGame('rock')">Rock <i class="fas fa-hand-rock"></i></button>
+    <button onclick="playGame('paper')">Paper <i class="fas fa-hand-paper"></i></button>
+    <button onclick="playGame('scissors')">Scissors <i class="fas fa-hand-scissors"></i></button>
     <p id="result"></p>
-    <button onclick="resetGame()">Play Again</button>
+    <button onclick="resetGame()">Play Again <i class="fa-solid fa-repeat"></i></button>
   </div>
   <script src="script.js"></script>
 </body>

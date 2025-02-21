@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  canvas {
+    border: 1px solid #d3d3d3;
+    background-color: linear-gradient(bottom, rgb(0, 255, 255), rgb(0, 217, 255));
+  }
+
+  .controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 15px 20px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  .scoreboard {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Consolas', monospace;
+  }
+
+  .game-over {
+    font-size: 30px;
+    color: red;
+    font-weight: bold;
+  }
+
+  @media (max-width: 600px) {
+    canvas {
+      width: 90%;
+      height: auto;
+    }
+  }

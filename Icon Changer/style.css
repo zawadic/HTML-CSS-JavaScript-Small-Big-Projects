@@ -1,0 +1,73 @@
+/* Basic Reset and Fullscreen Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, #ff7e5f, #feb47b);
+}
+
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  color: #ff6f00;
+  text-shadow: linear-gradient(to top, #fdb8a7, #ffbb88);
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 50px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.glassmorphism i {
+  font-size: 100px;
+  color: #000000;
+  transition: transform 0.3s ease;
+}
+
+button {
+  margin-top: 23px;
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}

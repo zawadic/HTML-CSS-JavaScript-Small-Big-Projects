@@ -1,0 +1,101 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Applying a gradient background to the body */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e7bff, #a28bff); /* Gradient background */
+}
+
+/* Container styling with glassmorphism effect */
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    border-radius: 15px;
+    padding: 40px;
+    padding-bottom: 0;
+    backdrop-filter: blur(10px); /* Glassmorphism effect */
+    box-shadow: 5px 10px 0 0 #4d4d4d;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading styling */
+h1 {
+    color: orange;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+
+/* Styling for the input container */
+.input-container {
+    margin-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Subtle blur effect */
+    color: #333;
+}
+
+/* Focus effect for the input */
+input:focus {
+    outline: none;
+}
+
+/* Button container styling */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Button styling */
+button {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+/* Hover effect on the button */
+button:hover {
+    transform: scale(1.1);
+}
+
+/* Active effect on the button */
+button:focus {
+    transform: scale(0.95);
+}
+
+/* Output container styling */
+.output-container {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* Output text styling */
+#output {
+    font-size: 1.5rem;
+    color: orange;
+    font-weight: 500;
+    min-height: 40px;
+}

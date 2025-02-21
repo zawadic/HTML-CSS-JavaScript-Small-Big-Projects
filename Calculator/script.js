@@ -22,4 +22,4 @@ function calculateResult() {
     } catch (error) {
         display.textContent = 'Error';
     }
-}        
+}

@@ -1,40 +1,46 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    background-color: #3e823f;
-    color: #ffffff;
-  }
-  .dice-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 20px;
-  }
-  img {
-    width: 100px;
-    height: 100px;
-  }
-  button {
-    margin: 10px;
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #4caf50;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  button:hover {
-    background-color: #2cc134;
-  }
-  footer {
-    padding: 10px;
-    color: #ffffff;
-    background-color: #2ec731;
-    font-size: 50px;
-  }
-  footer img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-    vertical-align: middle;
-  }
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  background-color: #3e823f;
+  color: #ffffff;
+}
+
+.dice-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+i {
+  font-size: 100px; /* Adjust size of dice icons */
+  color: #fff;
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2cc134;
+}
+
+footer {
+  padding: 10px;
+  color: #ffffff;
+  background-color: #2ec731;
+  font-size: 50px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Password Generator</h1>
+            <button id="mode-toggle" class="mode-toggle"><i class="fas fa-moon"></i></button>
+        </div>
+        <div class="password-generator">
+            <div class="password-field">
+                <input type="text" id="password" readonly>
+                <button class="copy-btn" id="copy-btn"><i class="fas fa-copy"></i></button>
+            </div>
+            <button id="generate-btn">Generate Password</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

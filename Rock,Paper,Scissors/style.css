@@ -13,7 +13,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #ffffff;
+    box-shadow: 5px 10px 0 0 #4d4d4d;
   }
   
   button {
@@ -22,13 +23,21 @@ body {
     cursor: pointer;
     margin: 5px;
     border: none;
-    background-color: #2196f3;
-    color: white;
+    background-color: #95ff6f;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman';
+    font-weight: bolder;
     border-radius: 5px;
   }
   
   button:hover {
-    background-color: #0d8bf2;
+    background-color: #2bff00;
+  }
+
+  i{
+    font-size: 24px;
+    margin-right: 10px;
+    color: #f38e21;
   }
   
   #result {

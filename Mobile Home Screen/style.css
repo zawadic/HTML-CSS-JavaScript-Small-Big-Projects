@@ -1,0 +1,273 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Container for the mobile screen */
+  .mobile-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .colsed-danger-text{
+    color: red;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .screen {
+    width: 375px;
+    height: 667px;
+    background: url('background.jpeg');
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 5px solid #000;
+  }
+  
+  /* Header inside the mobile screen (Nav section) */
+  .header {
+    color: white;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Basic styling for the watch */
+.watch {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.time {
+  font-weight: bold;
+  margin-right: 1px;
+}
+
+.ampm {
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.status {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: #000000;
+}
+
+
+
+/* Styling for the battery indicator */
+.battery {
+  display: flex;
+  font-size: 30px;
+  margin-right: 100%;  
+}
+
+.percentage {
+  display: flex;
+  font-size: 30px;
+  margin-right: 90%; 
+}
+
+.fa-battery-full {
+  color: #4caf50; 
+}
+
+.fa-battery-empty {
+  color: #ff0000; /* Empty battery color */
+}
+
+.fa-battery-quarter {
+  color: #ff9800; /* Quarter battery color */
+}
+
+.fa-battery-half {
+  color: #ffc107; /* Half battery color */
+}
+
+.fa-battery-three-quarters {
+  color: #9f8b0b; /* Three-quarters battery color */
+}
+
+
+
+/* Styling for the face detection */
+  .face-detector {
+    display: flex;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    transform: translateX(-50%);
+    animation: shadow 5s infinite;
+}
+  
+  /* Web content area with animated elements */
+  .web-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    text-align: center;
+  }
+  
+  .animated-title {
+    font-size: 24px;
+    color: #2c2c2c;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  h1{
+    font-size: 24px;
+    color: #2a2a2a;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .animated-text {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s;
+  }
+  
+  .animated-button {
+    background-color: #4cae4f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    animation: fadeIn 2s forwards shadow 5s infinite;
+  }
+  
+  .animated-button:hover {
+    background-color: #45a049;
+  }
+  /* General Styles for .web-content */
+.web-content {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1200px; /* Keep it centered and prevent it from being too wide */
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between cards */
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: rgba(60, 0, 0, 0.9);
+  border-radius: 8px;
+  width: 45%;
+  animation: fadeIn 2s forwards;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: rgba(102, 0, 0, 0.15);
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content i{
+  font-size: 3em;
+  color: #f58b00;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+  /* Footer with icons */
+  .footer {
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .footer button {
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .footer button:hover {
+    background-color: #bcffc0;
+  }
+  
+  /* Font Awesome Icons styles */
+  .footer i {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Fade-in animation for elements */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* CSS animation for the face-detector text */
+  @keyframes shadow {
+    0% {
+        text-shadow: 0 0 7px rgba(0, 30, 255, 0.5);
+    }
+    25% {
+        text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    }
+    75% {
+        text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        text-shadow: 0 0 7px rgba(234, 0, 255, 0.5);
+    }
+
+}
+  

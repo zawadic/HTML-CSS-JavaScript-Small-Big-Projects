@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Home Screen</title>
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2 class="colsed-danger-text hidden">Mobile Closed!!!</h2>
+  <div class="mobile-container">
+    <div class="screen">
+      <!-- Header (Navigation) of the Mobile Screen -->
+      <div class="header">
+        <div class="watch">
+          <span class="time"></span>
+          <span class="ampm"></span>
+        </div>
+        <div class="face-detector">
+          <i class="fas fa-smile"></i>
+        </div>
+        <div class="battery">
+          <div class="percentage">
+            <i class="fas fa-battery-full"></i>
+          </div>
+        </div>
+        <div class="status">
+            <i class="fas fa-wifi"></i>
+            <i class="fas fa-signal"></i>
+        </div>
+      </div>
+      
+      <!-- Web content with animated text and buttons -->
+      <div class="web-content">
+        <h1 class="animated-title">Welcome to Our Mobile  Web App</h1>
+        <p class="animated-text">Experience interactive and exciting web content with animations!</p>
+        <button class="animated-button" onclick="showAlert()">Get Started</button>
+        <br><br>
+        <div class="card-container">
+          <h1>How This mobile Make?</h1>
+          <div class="card">
+            <div class="card-content">
+              <i class="fab fa-html5"></i>
+              <h3>HTML</h3>
+              <p>The standard markup language for documents designed to be displayed in a web browser.</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <i class="fab fa-css3"></i>
+              <h3>CSS</h3>
+              <p>The standard markup language for documents designed to be displayed in a web browser.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer with Icons (Square and Bars) -->
+      <div class="footer">
+        <button><i class="fa-solid fa-caret-left"></i></button>
+        <button><i class="fas fa-square"></i></button>
+        <button><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
