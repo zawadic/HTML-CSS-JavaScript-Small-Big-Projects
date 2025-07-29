@@ -10,6 +10,7 @@ const resultElement = document.getElementById('result');
 let shuffledQuestions, currentQuestionIndex;
 let timeLeft, timerInterval;
 let score = 0;
+let questionTime = 10; // Default time for each question
 
 // Questions Array
 const questions = [
@@ -67,7 +68,8 @@ function setNextQuestion() {
 
 function showQuestion(question) {
   questionElement.innerText = question.question;
-  question.answers.forEach((answer) => {
+  let answers = question.answers.sort(() => Math.random() - 0.5); // Randomize answer choices
+  answers.forEach((answer) => {
     const button = document.createElement('button');
     button.innerText = answer.text;
     button.classList.add('button');
@@ -82,7 +84,7 @@ function showQuestion(question) {
 
 function resetState() {
   clearInterval(timerInterval);
-  timeLeftElement.innerText = 10;
+  timeLeftElement.innerText = questionTime;
   nextButton.classList.add('hide');
   resultElement.classList.add('hide');
   while (answerButtonsElement.firstChild) {
@@ -116,7 +118,7 @@ function setStatusClass(element, correct) {
 }
 
 function startTimer() {
-  timeLeft = 10;
+  timeLeft = questionTime;
   timeLeftElement.innerText = timeLeft;
   timerInterval = setInterval(() => {
     timeLeft--;
@@ -134,7 +136,7 @@ function showResult() {
   timerElement.classList.add('hide');
   resultElement.classList.remove('hide');
   resultElement.innerText = `
-  Congrutualations🥳!! Your score: ${score} out of ${questions.length}
+  Congratulation🥳!! Your score: ${score} out of ${questions.length}
   `;
   resultElement.style.background = "#dcf6d9";
   resultElement.style.color = "Green";

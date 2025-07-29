@@ -1,39 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #e0f7fa;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f4f8;
+  overflow: hidden;
+}
+
+.game-container {
+  text-align: center;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease-in-out;
+}
+
+.game-container:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+
+#score-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #26a69a;
+  margin-bottom: 20px;
+}
+
+#score {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00897b;
+  transition: color 0.3s ease-in-out;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.action-btn {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #26a69a;
+  color: white;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.action-btn:hover {
+  background-color: #1e8579;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.action-btn:active {
+  transform: scale(0.95);
+}
+
+.increase-btn {
+  background-color: #00796b;
+  border-radius: 50%;
+}
+
+.decrease-btn {
+  background-color: #d32f2f;
+  border-radius: 50%;
+}
+
+.reset-btn {
+  background-color: #fbc02d;
+}
+
+@keyframes increaseScoreAnim {
+  0% {
+    color: #00897b;
   }
-  
-  .game-container {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  50% {
+    color: #26a69a;
   }
-  
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    background-color: #26a69a;
-    color: white;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 5px;
+  100% {
+    color: #00897b;
   }
-  
-  button:hover {
-    background-color: #1e8579;
+}
+
+@keyframes decreaseScoreAnim {
+  0% {
+    color: #00897b;
   }
-  
-  #score {
-    font-size: 24px;
-    font-weight: bold;
+  50% {
+    color: #d32f2f;
   }
-  
+  100% {
+    color: #00897b;
+  }
+}

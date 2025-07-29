@@ -6,40 +6,109 @@
     <title>Password Toggle</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
-        /* Basic styling */
+        /* Global styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
+            color: white;
         }
+
+        .container {
+            text-align: center;
+            padding: 60px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(50px);
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #fff;
+        }
+
         .password-toggle {
             position: relative;
             display: inline-block;
+            width: 100%;
+            max-width: 450px;
+            padding-top: 20px;
         }
+
         .password-toggle input {
-            padding: 10px;
-            width: 200px;
+            padding: 12px 20px;
+            width: 100%;
             font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border-radius: 30px;
+            border: 2px solid #fff;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #fff;
+            transition: border-color 0.3s, background-color 0.3s;
+            position: relative;
         }
+
+        .password-toggle input:focus {
+            border-color: #2575fc;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Floating label */
+        .password-toggle label {
+            position: absolute;
+            top: 32px;
+            left: 20px;
+            color: #fff;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.3s;
+            opacity: 0.7;
+        }
+
+        /* Focus on the input, label floats above */
+        .password-toggle input:focus + label,
+        .password-toggle input:not(:placeholder-shown) + label {
+            top: 12px;
+            font-size: 14px;
+            opacity: 1;
+            color: #2575fc;
+        }
+
+        /* Eye icon */
         .password-toggle .toggle-password {
             position: absolute;
-            top: 50%;
-            right: 10px;
+            top: 60%;
+            right: 0px;
             transform: translateY(-50%);
             cursor: pointer;
-            color: #666;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+
+        .password-toggle .toggle-password:hover {
+            color: #2575fc;
+        }
+
+        /* Hover effect on container */
+        .container:hover {
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
-    <div class="password-toggle">
-        <input type="password" id="passwordField" placeholder="Enter password">
-        <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+    <div class="container">
+        <h2>Password Toggle</h2>
+        <div class="password-toggle">
+            <input type="password" id="passwordField" placeholder=" " required>
+            <label for="passwordField">Enter your password</label>
+            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+        </div>
     </div>
 
     <script>

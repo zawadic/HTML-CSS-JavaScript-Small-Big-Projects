@@ -24,7 +24,7 @@ var myGameArea = {
 };
 
 function startGame() {
-    myGamePiece = new component(30, 30, birdImage, 10, 120,birdImage);
+    myGamePiece = new component(30, 30, 'red', 10, 120,birdImage);
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 }

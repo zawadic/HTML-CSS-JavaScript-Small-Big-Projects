@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tip Calculator</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,16 +17,16 @@
     </div>
     <div id="form">
       <label for="totalBill">Total Bill</label>
-      <input type="text" id="totalBill" placeholder="Enter your Total Bill">
+      <input type="text" id="totalBill" placeholder="Enter your Total Bill in ৳" required>
       <label for="tipMain">Tip %</label>
-      <input type="text" id="tipMain" placeholder="Expected Tip">
+      <input type="text" id="tipMain" placeholder="Expected Tip" required>
       <div class="people_area">
         <p>People:</p>
         <div class="inner_people">
           <ul>
-            <li id="minusSum">-</li>
+            <li id="minusSum"><i class="fa-solid fa-minus fa-lg"></i></li>
             <li id="peopleNum">1</li>
-            <li id="plusSum">+</li>
+            <li id="plusSum"><i class="fa-solid fa-plus fa-lg"></i></li>
           </ul>
           <button id="calculator">Calculate</button>
         </div>
